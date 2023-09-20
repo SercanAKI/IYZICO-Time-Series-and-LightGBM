@@ -1,41 +1,41 @@
 ###############################################################
-# İş Problemi
+# BUSINESS PROBLEM
 ###############################################################
 
-# Iyzico internetten alışveriş deneyimini hem alıcılar hem de satıcılar için kolaylaştıran bir finansal teknolojiler şirketidir.
-# E-ticaret firmaları, pazaryerleri ve bireysel kullanıcılar için ödeme altyapısı sağlamaktadır.
-# 2020 yılının son 3 ayı için merchant_id ve gün bazında toplam işlem hacmi tahmini yapılması beklenmekte.
+# Iyzico is a financial technologies company that makes the online shopping experience easier for both buyers and sellers.
+# It provides payment infrastructure for e-commerce companies, marketplaces and individual users.
+# It is expected to estimate the total transaction volume on a merchant_id and daily basis for the last 3 months of 2020.
 
 
 ###############################################################
-# Veri Seti Hikayesi
+# DATASET STORY
 ###############################################################
-#  7 üye iş yerinin 2018’den 2020’e kadar olan verileri yer almaktadır.
+#  The member workplace's data from 2018 to 2020 is included.
 
-# Transaction : İşlem sayısı
-# MerchantID : Üye iş yerlerinin id'leri
-# Paid Price : Ödeme miktarı
+# Transaction : Number of transactions
+# MerchantID : IDs of member businesses
+# Paid Price : Payment amount
 
 ###############################################################
-# GÖREVLER
+# TASKS
 ###############################################################
 
-# Görev 1 : Veri Setinin Keşfi
-            # 1. iyzico_data.csv dosyasını okutunuz. transaction_date değişkeninin tipini date'e çeviriniz.
-            # 2.Veri setinin başlangıc ve bitiş tarihleri nedir?
-            # 3.Her üye iş yerindeki toplam işlem sayısı kaçtır?
-            # 4.Her üye iş yerindeki toplam ödeme miktarı kaçtır?
-            # 5.Her üye iş yerinin her bir yıl içerisindeki transaction count grafiklerini gözlemleyiniz.
+# Duty  1 : Exploring the Dataset
+            # 1. Read the iyzico_data.csv file. Change the type of transaction_date variable to date.
+            # 2. What are the start and end dates of the data set?
+            # 3. What is the total number of transactions in each merchant?
+            # 4. What is the total payment amount at each merchant?
+            # 5. Observe the transaction count graphs of each member business in each year.
 
-# Görev 2 : Feature Engineering tekniklerini uygulayanız. Yeni feature'lar türetiniz.
+# Duty  2 : We apply Feature Engineering techniques. Create new features.
             # Date Features
             # Lag/Shifted Features
             # Rolling Mean Features
             # Exponentially Weighted Mean Features
 
-# Görev 3 : Modellemeye Hazırlık
-            # 1.One-hot encoding yapınız.
-            # 2.Custom Cost Function'ları tanımlayınız.
-            # 3.Veri setini train ve validation olarak ayırınız.
+# Duty 3 : Modellemeye Hazırlık
+            # 1.Do one-hot encoding.
+            # 2.Define Custom Cost Functions.
+            # 3.Separate the data set into train and validation.
 
-# Görec 4 : LightGBM Modelini oluşturunuz ve SMAPE ile hata değerini gözlemleyiniz.
+# Duty 4 : Create the LightGBM Model and observe the error value with SMAPE.
